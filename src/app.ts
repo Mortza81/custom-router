@@ -9,6 +9,7 @@ myRoute("/","post",(req,res)=>{
     })
 })
 app.use()
+
 app.use(router);
 app.listen(4000,()=>{
     console.log('app is running');
