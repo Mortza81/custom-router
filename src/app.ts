@@ -8,6 +8,7 @@ myRoute("/","post",(req,res)=>{
         message:"success"
     })
 })
+app.use()
 app.use(router);
 app.listen(4000,()=>{
     console.log('app is running');
