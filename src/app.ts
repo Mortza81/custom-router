@@ -7,7 +7,6 @@ myRoute("/","post",(req,res)=>{
     res.status(200).json({
         message:"success"
     })
-    
 })
 app.use(router);
 app.listen(4000,()=>{
