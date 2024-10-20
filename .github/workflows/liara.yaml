@@ -12,10 +12,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-          
+
       - name: update-liara
         env:
           LIARA_TOKEN: ${{ secrets.LIARA_API_TOKEN }}
         run: |
           npm i -g @liara/cli@5
+          
           liara deploy --app="testci" --api-token="$LIARA_TOKEN" --no-app-logs
