@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
+          
       - name: update-liara
         env:
           LIARA_TOKEN: ${{ secrets.LIARA_API_TOKEN }}
