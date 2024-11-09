@@ -5,7 +5,7 @@ const app=express()
 
 myRoute("/","post",(req,res)=>{
     res.status(200).json({
-        message:"success"
+        message:"successsss"
     })
 })
 app.use()
